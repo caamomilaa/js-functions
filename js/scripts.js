@@ -174,3 +174,66 @@ function getFullPayment(knife, euros) {
 	console.log('En total pagará ' + fullPayment + ' euros.');
 }
 getFullPayment(5, 18);
+
+// 2️⃣3️⃣ Bego tiene 480 galletas y quiere ponerlas en bolsas de 40 galletas cada una. ¿Cuántas bolsas llenará?
+
+function getTotalBagsOfCookies(cookies, bagOfCookies) {
+	const totalBagsOfCookies = cookies / bagOfCookies;
+	console.log('Llenará ' + totalBagsOfCookies + ' bolsas de galletas.');
+}
+getTotalBagsOfCookies(480, 40);
+
+// 2️⃣4️⃣ Camila recorrió 1.200 km en un viaje de 4 días. ¿Cuántos kilómetros recorrió por día?
+
+function getKilometersPerDay(totalKilometers, totalDays, days) {
+	const kilometersPerDay = (totalKilometers * days) / totalDays;
+	console.log('Recorrió ' + kilometersPerDay + ' kilómetros al día.');
+}
+getKilometersPerDay(1200, 4, 1);
+
+// 2️⃣5️⃣ Sabrina ahorró 120 euros en enero y 85 euros en febrero. ¿Cuánto dinero ha ahorrado en total?
+
+function getTotalSavings(januarySavings, februarySavings) {
+	const totalSavings = januarySavings + februarySavings;
+	console.log('En total ha ahorrado ' + totalSavings + ' euros.');
+}
+getTotalSavings(120, 85);
+
+// 2️⃣6️⃣ Macarena tiene 73 caramelos y quiere repartirlos entre sus amigos en grupos de 6. ¿Cuántos caramelos le sobrarán?
+
+function getTotalLeftCandys(candys, groups) {
+	const leftCandys = candys % groups;
+	console.log('Sobra ' + leftCandys + ' caramelo.');
+}
+getTotalLeftCandys(73, 6);
+
+// 2️⃣7️⃣ Abby registró 17 casas por la mañana y 8 por la tarde. ¿Cuántas casas registró en total?
+function getTotalHousesRegistered(morningRegister, afternoonRegister) {
+	const totalHousesRegistered = morningRegister + afternoonRegister;
+	console.log('Registró ' + totalHousesRegistered + ' casas.');
+}
+getTotalHousesRegistered(17, 8);
+
+// 2️⃣8️⃣ Bego tiene 95 fotos y quiere hacer álbumes donde caben 12 fotos en cada uno. ¿Cuántas fotos no podrá guardar en los álbumes?
+
+function getLeftPhotos(photos, albums) {
+	const leftPhotos = photos % albums;
+	console.log('No podrá guardar ' + leftPhotos + ' fotos.');
+}
+getLeftPhotos(95, 12);
+
+// 2️⃣9️⃣ Camila tiene un descuento de 15 euros en un producto que cuesta 120 euros. ¿Cuánto cuesta el producto después del descuento?
+
+function getPriceAfterDiscount(discount, price) {
+	const priceAfterDiscount = price - discount;
+	console.log('El producto valdrá ' + priceAfterDiscount + ' euros.');
+}
+getPriceAfterDiscount(15, 120);
+
+// 3️⃣0️⃣ Sabrina tiene 500 gramos de harina y quiere hacer porciones de 24 gramos cada una para preparar galletas. ¿Cuánta harina le sobrará después de hacer todas las porciones completas?
+
+function getLeftFlour(gramsOfFlour, gramsPerPortion) {
+	const leftFlour = gramsOfFlour % gramsPerPortion;
+	console.log('Sobrarán ' + leftFlour + ' gramos.');
+}
+getLeftFlour(500, 24);
